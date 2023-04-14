@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+<h1>Calculator</h1>
+<label for="A">A:</label>
+<input id="A" name="A" placeholder="First number"><br>
+<label for="B">B:</label>
+<input id="B" name="B" placeholder="Second number"><br>
+<button type="button" data-action="add">Add</button>
+<button type="button" data-action="subtract">Subtract</button>
+<button type="button" data-action="multiply">Multiply</button>
+<button type="button" data-action="divide">Divide</button>
+<br><br>
+<label for="result">Result:</label>
+<span id="result"></span>
+<script type="text/javascript" src="{% static 'main.js' %}"></script>
+</body>
+</html>
